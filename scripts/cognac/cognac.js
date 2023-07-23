@@ -12560,7 +12560,7 @@ var drunk2 = function() {
   }, {
     key: "stasis",
     value: function() {
-      return this.trySkill($skill(_templateObject118 || (_templateObject118 = _taggedTemplateLiteral15(["Curse of Weaksauce"])))).trySkill($skill(_templateObject128 || (_templateObject128 = _taggedTemplateLiteral15(["Micrometeorite"])))).tryItemsTogether([$item(_templateObject138 || (_templateObject138 = _taggedTemplateLiteral15(["Time-Spinner"]))), $item(_templateObject147 || (_templateObject147 = _taggedTemplateLiteral15(["HOA citation pad"])))]).trySkill($skill(_templateObject157 || (_templateObject157 = _taggedTemplateLiteral15(["Extract"]))));
+      return this.externalIf(!drunk2(), Macro3.trySkill($skill(_templateObject118 || (_templateObject118 = _taggedTemplateLiteral15(["Curse of Weaksauce"])))).trySkill($skill(_templateObject128 || (_templateObject128 = _taggedTemplateLiteral15(["Micrometeorite"])))).tryItemsTogether([$item(_templateObject138 || (_templateObject138 = _taggedTemplateLiteral15(["Time-Spinner"]))), $item(_templateObject147 || (_templateObject147 = _taggedTemplateLiteral15(["HOA citation pad"])))]).trySkill($skill(_templateObject157 || (_templateObject157 = _taggedTemplateLiteral15(["Extract"])))));
     }
   }, {
     key: "attackKill",
@@ -12889,7 +12889,7 @@ var Heap = /* @__PURE__ */ function() {
         },
         effects: [].concat(_toConsumableArray10(basicEffects()), _toConsumableArray10(noncombatEffects())),
         combat: new CombatStrategy().autoattack(function() {
-          return Macro2.trySkill($skill(_templateObject139 || (_templateObject139 = _taggedTemplateLiteral20(["Extract Jelly"])))).trySkill($skill(_templateObject148 || (_templateObject148 = _taggedTemplateLiteral20(["Extract"])))).externalIf(mustCheckStench(), Macro2.stasis().tryItem($item(_templateObject158 || (_templateObject158 = _taggedTemplateLiteral20(["Rain-Doh indigo cup"])))).tryItem($item(_templateObject168 || (_templateObject168 = _taggedTemplateLiteral20(["Rain-Doh blue balls"])))).while_("!hpbelow 400 && !pastround 20", Macro2.item($item(_templateObject178 || (_templateObject178 = _taggedTemplateLiteral20(["seal tooth"])))))).tryFreeRun();
+          return Macro2.externalIf(!drunk(), Macro2.trySkill($skill(_templateObject139 || (_templateObject139 = _taggedTemplateLiteral20(["Extract Jelly"])))).trySkill($skill(_templateObject148 || (_templateObject148 = _taggedTemplateLiteral20(["Extract"]))))).externalIf(mustCheckStench(), Macro2.stasis().tryItem($item(_templateObject158 || (_templateObject158 = _taggedTemplateLiteral20(["Rain-Doh indigo cup"])))).tryItem($item(_templateObject168 || (_templateObject168 = _taggedTemplateLiteral20(["Rain-Doh blue balls"])))).while_("!hpbelow 400 && !pastround 20", Macro2.item($item(_templateObject178 || (_templateObject178 = _taggedTemplateLiteral20(["seal tooth"])))))).tryFreeRun();
         }),
         prepare: function() {
           capNonCombat();
