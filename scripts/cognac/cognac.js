@@ -12916,7 +12916,7 @@ var Heap = /* @__PURE__ */ function() {
         limit: {
           guard: function() {
             return function() {
-              return get(HEAP_ATTEMPTS, 0) < 60;
+              return get(HEAP_ATTEMPTS, 0) < 100;
             };
           }
         }
